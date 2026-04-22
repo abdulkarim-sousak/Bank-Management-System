@@ -4,17 +4,21 @@ A robust and efficient **Command Line Interface (CLI)** application built in C++
 
 ---
 
-## 🚀 Features
+## Features
 
-The system provides a complete **CRUD** (Create, Read, Update, Delete) functionality for managing bank clients:
+### Client Management
+- **Show Client List**: Display all clients stored in the system with formatted output.
+- **Add New Client**: Add new clients with validation to prevent duplicate account numbers.
+- **Delete Client**: Mark clients for deletion and update the file storage.
+- **Update Client Info**: Modify client details such as PIN, name, phone, and balance.
+- **Find Client**: Search for a client by account number and display their details.
 
-* **[1] Show Client List:** Displays all registered clients in a formatted table with details like Account Number, PIN, Name, and Balance.
-* **[2] Add New Client:** Allows adding new clients with unique account numbers. It includes a built-in validation to prevent duplicate IDs.
-* **[3] Delete Client:** Safely removes a client from the system after confirmation.
-* **[4] Update Client Info:** Allows modifying existing client details (PIN, Name, Phone, and Balance).
-* **[5] Find Client:** Quickly search for and display a specific client’s details using their account number.
-* **[6] Data Persistence:** All data is saved in a structured text file (`Clients.txt`), ensuring data is preserved after closing the program.
+### Transactions
+- **Deposit**: Add funds to a client’s account.
+- **Withdraw**: Deduct funds from a client’s account with balance validation.
+- **Total Balance**: Display the balance of all clients and calculate the total across the system.
 
+ 
 ---
 
 ## 🛠️ Technical Implementation
@@ -34,20 +38,6 @@ The system provides a complete **CRUD** (Create, Read, Update, Delete) functiona
 
 ---
 
-## 💻 How to Run
-
-1.  **Prerequisites:** Ensure you have a C++ compiler installed (e.g., GCC, Clang, or MSVC).
-2.  **Compile the code:**
-    ```bash
-    g++ -o BankSystem main.cpp
-    ```
-3.  **Run the application:**
-    ```bash
-    ./BankSystem
-    ```
-
----
-
 ## 📖 Usage Instructions
 
 1.  Upon launching, you will be presented with the **Main Menu**.
@@ -57,10 +47,4 @@ The system provides a complete **CRUD** (Create, Read, Update, Delete) functiona
 
 ---
 
-## 📝 Planned Improvements
-* [ ] Implementation of a **Transactions Menu** (Deposit/Withdraw).
-* [ ] User Authentication (Admin Login).
-* [ ] Encryption for PIN codes.
-
----
 **Developed with ❤️ in C++**
